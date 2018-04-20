@@ -1,0 +1,326 @@
+/*
+Theme Name: Desafio Imovel
+Theme URL: http://desafioimovel.com
+Description: Site para seleçao de estágio
+Author: Douglas da Silva
+Author URL: http://douglas88silva.com
+Version: 1.0
+*/
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
+@font-face {
+     font-family: Calibri;
+     src: url('assets/fonts/calibri_R.ttf')format('truetype');
+     src: url('assets/fonts/calibri_B.ttf')format('truetype');
+     src: url('assets/fonts/calibri_I.ttf')format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-family: 'Calibri',sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+/*CABEÇALHO*/
+.header{
+	
+    height: 350px;
+	background: url(assets/images/capa2.jpg) center top;
+	background-repeat: no-repeat;
+    background-size: 100%; 
+    
+}
+.header h2{
+
+	margin:60px auto;
+    font-style: bold;
+        text-align: center;
+    color: #fff;
+    font-size: 40px;
+    
+}
+
+.header .info{	
+	
+	text-align: center;
+    margin: 40px;
+	
+} 
+.header .info h2{	
+
+	
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+    font-style: bold;
+}
+.wrap{
+
+	margin: 0 auto;
+	width: 960px;
+	padding: 10px 0;
+}
+.custom-botao{
+
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: 
+    display:inline-block !important;
+    *display:inline !important;
+
+
+}
+.form-control{
+
+	width: 400px !important;
+    height: 40px !important;
+	border-radius: 4px !important;
+	background-color: #fff !important;
+       display:inline-block !important;
+    *display:inline !important;
+     font-size: 16px;
+}
+.btn-primary{
+	
+	border-radius:4px !important;
+    display: block !important;
+    
+ 
+    display:inline-block !important;
+    *display:inline !important;
+    
+
+}
+
+.btn-primary-custom{
+    
+  
+    width: 160px !important;
+    height: 40px !important;
+    background-color:#1074fb!important;
+     font-size: 16px;
+
+    
+
+}
+
+
+
+
+.form-group{
+    align-items: left !important;
+    margin: 0px !important;
+    width: 250px !important;
+
+}
+
+
+.contents{
+
+	height: 450px;
+	background-color:#f8f9fa;
+	
+
+}
+
+ .servicos{
+	margin-top: 120px;
+	padding: 0px;
+	text-align: center;
+	
+	
+
+ }
+ .LT_servicos{
+
+ }
+ .img1{
+  
+    margin-top: 50px;
+	width:100%;
+	height:auto !important;
+
+ }
+.img2{
+    padding: 0px auto;
+    width:100%;
+    height:auto !important;
+
+ }
+ .page{
+	
+	height: 800px;
+	margin: 0 auto;  
+	background-color:#ffffff;
+   /* background-color: #00fffc;*/
+	
+
+ }
+
+.txt{
+padding: 50px;
+margin-top: 100px;
+font-size: 14px;
+/*background-color: #00fffc;*/
+
+}
+
+
+
+
+
+.rodape {
+    padding: 0;
+    height: 140px;
+   
+    background-color: #f8f9fa;
+    color: white;
+    /*text-align: center;*/
+}
+
+
+.llkn_footer p{
+color: #484848;
+margin-right: 10px;
+margin-left: 10px;
+
+
+}
+    
+.llkn_footer ul{
+   
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+    text-decoration:none;
+    color: #1074fb;
+}
+
+.llkn_footer li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+
+}
+
+
+
+
+
+/*ADD SOCIAL ICONS*/
+
+@font-face {
+    font-family: 'si';
+    src: url('assets/fonts/socicon.eot');
+    src: url('assets/fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/socicon.woff') format('woff'),
+         url('assets/fonts/socicon.ttf') format('truetype'),
+         url('assets/fonts/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(assets/fonts/socicon.svg) format(svg);
+    }
+}
+
+.llkn_footer{
+    margin-top: 40px;
+}
+
+.soc{
+
+    margin-top: 40px;
+  text-align:right;
+
+}
+
+.soc ul {
+
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
+    margin-right: 12px;
+    color: #1074fb;
+    background-color: #f8f9fa;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
